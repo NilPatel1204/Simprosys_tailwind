@@ -2,50 +2,66 @@
 <html lang="en">
 
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="input.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="icon" type="image/png" href="img/shopify-">
-    <script
-        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Title of the page -->
+    <title>Shopify Product Feed and Google Shopping Ads Management App by Simprosys</title>
+
+    <!-- Intenal Css Files -->
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <!-- Optional: External JavaScript Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- External Fonts (Poppins) -->
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/alpine.min.js" defer></script>
-    <title>Shopify Product Feed and Google Shopping Ads Management App by Simprosys</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
     <!-- Navbar section start -->
-    <nav class="bg-[#195279] text-white overflow-hidden">
-        <div class="lg:bg-[#195279] px-1 ">
-            <div class="flex justify-between  text-white items-center py-3 font-light  gap-[1.6rem] lg:px-3">
-                <a href="/#index"><img class="h-[2.5rem] sm:h-auto ml-2" src="img/logo.png" alt=""></a>
-                <ul class=" flex sm:gap-4 justify-center items-center">
-                    <a href=""
-                        class="font-normal mx-2 text-lg sm:bg-[#D6E9F8] text-white sm:text-[#195279] sm:px-4 sm:py-[10px] rounded-full">
-                        <li>
-                            <p class="text-[13px] sm:text-[17px]">Support Home</p>
-                        </li>
+    <header>
+        <!-- Navbar Section  -->
+        <nav class="bg-[#195279] text-white overflow-hidden">
+            <div class="lg:bg-[#195279] px-1">
+                <div class="flex justify-between items-center text-white py-3 font-light gap-[1.6rem] lg:px-3">
+                    <!-- Logo -->
+                    <a href="#">
+                        <img class="h-[2.5rem] sm:h-auto ml-2" src="img/logo.png" alt="Logo">
                     </a>
-                    <a href="" class="font-medium text-lg mx-2 sm:px-4 sm:py-[10px] rounded-full">
-                        <li>
-                            <p class="text-[13px] sm:text-[17px]">Simprosys Home</p>
-                        </li>
-                    </a>
-                </ul>
+
+                    <!-- Navigation Menu -->
+                    <ul class="flex sm:gap-4 justify-center items-center">
+                        <!-- Support Home Link -->
+                        <a href=""
+                            class="font-normal mx-2 text-lg sm:bg-[#D6E9F8] text-white sm:text-[#195279] sm:px-4 sm:py-[10px] rounded-full">
+                            <li>
+                                <p class="text-[13px] sm:text-[17px]">Support Home</p>
+                            </li>
+                        </a>
+
+                        <!-- Simprosys Home Link -->
+                        <a href="" class="font-medium text-lg mx-2 sm:px-4 sm:py-[10px] rounded-full">
+                            <li>
+                                <p class="text-[13px] sm:text-[17px]">Simprosys Home</p>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <!-- Navbar section start-->
-
-
+    </main>
     <!-- Image Section Start -->
     <section class="bg-cover bg-center">
         <div
@@ -87,20 +103,25 @@
     <!-- Main Section Start -->
     <section class="mt-[20px] xl:mt-[70px]">
         <!-- Mobile Menu Start -->
-        <div class=" p-1 w-full inset-y-0 left-0 flex items-center justify-between lg:hidden bg-white">
+        <div class="pr-7 lg:px-0 p-1 w-full inset-y-0 left-0 flex items-center justify-between lg:hidden bg-white">
             <div class="relative p-4">
-                <img src="img/shopify.png" alt="">
+                <img src="img/shopify.png" alt="Shopify Logo">
             </div>
+
             <div>
                 <button id="menu-button" type="button"
                     class="inline-flex items-center justify-center p-2 text-gray-400 hover:bg-[#195178] hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                     aria-controls="mobile-menu" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
+
+                    <!-- Hamburger Icon -->
                     <svg class="block h-6 w-6 font-bold" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
+
+                    <!-- Close Icon -->
                     <svg class="hidden h-6 w-6 font-bold" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -109,41 +130,43 @@
             </div>
         </div>
 
-
-        <div id="mobile-menu" class="lg:hidden block">
-            <div class="space-y-1 px-2 pt-2 ">
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class=" lg:hidden block">
+            <div class="space-y-1 px-2 pt-2">
                 <div class="flex p-[6px] rounded-xl hover:bg-[#E9F6FF] space-x-3 items-center">
-                    <img src="img/shopify1.png" alt="">
-                    <a href="" class="font-sm">Simprosys Google Shopping Feed
-                    </a>
+                    <img src="img/shopify1.png" alt="Google Shopping Feed">
+                    <a href="" class="font-sm">Simprosys Google Shopping Feed</a>
                 </div>
+
                 <div class="flex p-[6px] rounded-xl hover:bg-[#E9F6FF] space-x-3 items-center">
-                    <img src="img/shopify2.png" alt="">
+                    <img src="img/shopify2.png" alt="Proviews Product Reviews Q&A">
                     <a href="" class="font-sm">Proviews Product Reviews Q&A</a>
                 </div>
+
                 <div class="flex p-[6px] rounded-xl hover:bg-[#E9F6FF] space-x-3 items-center">
-                    <img src="img/shopify3.png" alt="">
-                    <a class="font-sm ">Simprosys Manufacturer Feed</a>
+                    <img src="img/shopify3.png" alt="Simprosys Manufacturer Feed">
+                    <a href="" class="font-sm">Simprosys Manufacturer Feed</a>
                 </div>
+
                 <div class="flex p-[6px] rounded-xl hover:bg-[#E9F6FF] space-x-3 items-center">
-                    <img src="img/shopify4.png" alt="">
-                    <a href="" class="font-sm">FeedAPIs For Bing Shopping /MS
-                    </a>
+                    <img src="img/shopify4.png" alt="FeedAPIs For Bing Shopping / MS">
+                    <a href="" class="font-sm">FeedAPIs For Bing Shopping / MS</a>
                 </div>
+
                 <div class="flex p-[6px] rounded-xl hover:bg-[#E9F6FF] space-x-3 items-center">
-                    <img src="img/shopify5.png" alt="">
-                    <a href="" class="font-sm ">Simprosys Customer Match Lists
-                    </a>
+                    <img src="img/shopify5.png" alt="Simprosys Customer Match Lists">
+                    <a href="" class="font-sm">Simprosys Customer Match Lists</a>
                 </div>
+
                 <div class="flex p-[6px] rounded-xl hover:bg-[#E9F6FF] space-x-3 items-center">
-                    <img src="img/shopify6.png" alt="">
-                    <a href="" class="font-sm ">SMPS Product Question & Answer
-                    </a>
+                    <img src="img/shopify6.png" alt="SMPS Product Question & Answer">
+                    <a href="" class="font-sm">SMPS Product Question & Answer</a>
                 </div>
             </div>
         </div>
         <!-- Mobile Menu End -->
 
+        <!-- Right Side Section Start -->
         <div class="mx-[20px] md:mx-[26px] 2xl:mx-[97.5px] lg:mx-[50px] ">
             <div class="grid md:grid-cols-12">
                 <div
@@ -182,8 +205,10 @@
                     </div>
                 </div>
 
-                <div class=" lg:col-start-5 md:px-2 lg:px-0 md:col-span-8 lg:col-span-7 ">
-                    <div class="mt-[20px] md:mt-[0px] md:pt-[0px]  space-y-8 xl:space-y-16 mb-[50px] lg:mb-[92px]">
+                <div class="lg:col-start-5 md:px-2 lg:px-0 md:col-span-8 lg:col-span-7">
+                    <div class="mt-[20px] md:mt-[0px] md:pt-[0px] space-y-8 xl:space-y-16 mb-[50px] lg:mb-[92px]">
+
+                        <!-- Breadcrumbs Section -->
                         <div>
                             <div class="space-y-8">
                                 <div class="flex space-x-[10px]">
@@ -196,305 +221,315 @@
                                         Google Shopping
                                         Feed</a>
                                 </div>
+
+                                <!-- Title and Description Section -->
                                 <div class="flex space-x-3 xl:space-x-6">
                                     <img class="h-full" src="img/shopify-cart-icon.png" alt="">
                                     <div class="xl:space-y-2">
                                         <h1 class="font-semibold text-[18px] xl:text-[40px] xl:leading-[54px]">Simprosys
-                                            Google
-                                            Shopping
-                                            Feed
-                                        </h1>
+                                            Google Shopping
+                                            Feed</h1>
                                         <p class="text-sm xl:text-lg text-[#25282B]">Submits Feed For Google Shopping,
-                                            Facebook
-                                            Ads
-                                            &
-                                            Microsoft Ads.
-                                        </p>
+                                            Facebook Ads &
+                                            Microsoft Ads.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Installation Section -->
                         <div>
                             <div>
                                 <div class="flex px-2 py-4 xl:px-4 xl:py-8 border-t-2 justify-between">
-                                    <h2 class="text-xl xl:text-2xl font-medium">Installation </h2>
-                                    <button><img src="img/Arrow-down.png" alt=""></button>
+                                    <h2 class="text-xl xl:text-2xl font-medium">Installation</h2>
+                                    <button><img src="img/Arrow-down.png" alt=""></button> <!-- Arrow for toggle -->
                                 </div>
                                 <div class="px-2 py-4 xl:px-4 xl:pb-8">
                                     <ul
                                         class="font-medium text-sm space-y-3 xl:text-[16px] xl:leading-[42px] text-[#55575A] list-disc list-inside">
+                                        <!-- List of Links under Installation -->
                                         <li><a class="hover:underline hover:text-[#25282B]" href="">Why Should I Try
                                                 Simprosys Google
                                                 Shopping Feed?</a></li>
                                         <li><a class="hover:underline hover:text-[#25282B]" href="">Pricing for
-                                                Simprosys Google Shopping Feed</a></li>
+                                                Simprosys Google
+                                                Shopping Feed</a></li>
                                         <li><a class="hover:underline hover:text-[#25282B]" href="">Privacy Policy –
-                                                Simprosys Google Shopping Feed</a></li>
-                                        <li><a class="hover:underline hover:text-[#25282B]" href="">Programs in
-                                                Google Merchant Center</a></li>
-                                        <li><a class="hover:underline hover:text-[#25282B]" href="">List your
-                                                Products for FREE on Google Shopping Results</a></li>
+                                                Simprosys Google
+                                                Shopping Feed</a></li>
+                                        <li><a class="hover:underline hover:text-[#25282B]" href="">Programs in Google
+                                                Merchant
+                                                Center</a></li>
+                                        <li><a class="hover:underline hover:text-[#25282B]" href="">List your Products
+                                                for FREE on
+                                                Google Shopping Results</a></li>
                                         <li><a class="hover:underline hover:text-[#25282B]" href="">Simprosys Google
-                                                Shopping Feed App Setup Guidelines</a></li>
-                                        <li><a class="hover:underline hover:text-[#25282B]" href="">Best Practices
-                                                for Feed Optimization</a></li>
+                                                Shopping Feed App
+                                                Setup Guidelines</a></li>
+                                        <li><a class="hover:underline hover:text-[#25282B]" href="">Best Practices for
+                                                Feed
+                                                Optimization</a></li>
                                         <li><a class="hover:underline hover:text-[#25282B]" href="">Refund Policy –
-                                                Simprosys Google Shopping Feed</a></li>
+                                                Simprosys Google
+                                                Shopping Feed</a></li>
                                     </ul>
                                 </div>
                             </div>
+
+                            <!-- Additional Sections with Collapsible Buttons -->
                             <div>
                                 <div class="flex px-2 py-4 xl:px-4 xl:py-8 border-t-2 justify-between">
                                     <h2 class="text-xl xl:text-2xl font-medium">App-Processes - GSF</h2>
-                                    <button><img src="img/Arrow-down.png" alt=""></button>
+                                    <button><img src="img/Arrow-down.png" alt=""></button> <!-- Arrow for toggle -->
                                 </div>
                             </div>
+
                             <div>
                                 <div class="flex px-2 py-4 xl:px-4 xl:py-8 border-t-2 justify-between">
                                     <h2 class="text-xl xl:text-2xl font-medium">Product Attributes and Optimization -
                                         GSF</h2>
-                                    <button><img src="img/Arrow-down.png" alt=""></button>
+                                    <button><img src="img/Arrow-down.png" alt=""></button> <!-- Arrow for toggle -->
                                 </div>
                             </div>
+
                             <div>
                                 <div class="flex px-2 py-4 xl:px-4 xl:py-8 border-t-2 justify-between">
                                     <h2 class="text-xl xl:text-2xl font-medium">Product Errors and their Fixes - GSF
                                     </h2>
-                                    <button><img src="img/Arrow-down.png" alt=""></button>
+                                    <button><img src="img/Arrow-down.png" alt=""></button> <!-- Arrow for toggle -->
                                 </div>
                             </div>
+
                             <div>
                                 <div class="flex px-2 py-4 xl:px-4 xl:py-8 border-t-2 justify-between">
                                     <h2 class="text-xl xl:text-2xl font-medium">Facebook (Meta) Shopping - GSF</h2>
-                                    <button><img src="img/Arrow-down.png" alt=""></button>
+                                    <button><img src="img/Arrow-down.png" alt=""></button> <!-- Arrow for toggle -->
                                 </div>
                             </div>
+
                             <div>
                                 <div class="flex px-2 py-4 xl:px-4 xl:py-8 border-t-2 justify-between">
                                     <h2 class="text-xl xl:text-2xl font-medium">Automated Rule for Feed - GSF</h2>
-                                    <button><img src="img/Arrow-down.png" alt=""></button>
+                                    <button><img src="img/Arrow-down.png" alt=""></button> <!-- Arrow for toggle -->
                                 </div>
                             </div>
+
                             <div>
                                 <div class="flex px-2 py-4 xl:px-4 xl:py-8 border-t-2 justify-between">
                                     <h2 class="text-xl xl:text-2xl font-medium">Google Shopping - GSF</h2>
-                                    <button><img src="img/Arrow-down.png" alt=""></button>
+                                    <button><img src="img/Arrow-down.png" alt=""></button> <!-- Arrow for toggle -->
                                 </div>
                             </div>
+
                             <div>
                                 <div class="flex px-2 py-4 xl:px-4 xl:py-8 border-t-2 justify-between">
                                     <h2 class="text-xl xl:text-2xl font-medium">Microsoft (Bing) Shopping - GSF</h2>
-                                    <button><img src="img/Arrow-down.png" alt=""></button>
+                                    <button><img src="img/Arrow-down.png" alt=""></button> <!-- Arrow for toggle -->
                                 </div>
                             </div>
+
                             <div>
                                 <div class="flex px-2 py-4 xl:px-4 xl:py-8 border-y-2 justify-between">
                                     <h2 class="text-xl xl:text-2xl font-medium">Pinterest Shopping - GSF</h2>
-                                    <button><img src="img/Arrow-down.png" alt=""></button>
+                                    <button><img src="img/Arrow-down.png" alt=""></button> <!-- Arrow for toggle -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
     <!-- Main Section End-->
-
+    </main>
 
     <!-- Footer Section Startr -->
     <section>
         <div class="bg-[#CEEBFF]">
             <div
                 class="space-y-5 py-5 lg:space-y-0 lg:py-0 lg:grid lg:grid-cols-12 mx-[26px] lg:gap-10 lg:mx-[50px] 2xl:mx-[97.5px] items-center">
-                <div class="lg:col-span-4 ">
+                <!-- Section 1: Raise a Ticket -->
+                <div class="lg:col-span-4">
                     <div class="space-x-5 lg:space-x-[30px] flex">
-                        <img class="sm:w-16 h-16 lg:w-[84px] lg:h-[84px]" src="img/Group 1000002011 (1).png" alt="">
+                        <img class="sm:w-16 h-16 lg:w-[84px] lg:h-[84px]" src="img/Group 1000002011 (1).png"
+                            alt="Raise a Ticket Icon">
                         <div class="space-y-[11px]">
-                            <h2 class="font-medium sm:text-base lg:text-2xl leading-6">Can't find what you're looking
-                                for?</h2>
+                            <h2 class="font-medium sm:text-base lg:text-2xl leading-6">
+                                Can't find what you're looking for?
+                            </h2>
                             <button
-                                class="border rounded-full text-base px-2 py-1 lg:px-4 lg:py-2 text-[#195279] border-black">Raise
-                                a
-                                Ticket</button>
+                                class="border rounded-full text-base px-2 py-1 lg:px-4 lg:py-2 text-[#195279] border-black">
+                                Raise a Ticket
+                            </button>
                         </div>
                     </div>
                 </div>
+
+                <!-- Section 2: Support Contact -->
                 <div class="lg:col-start-5 lg:col-end-10">
                     <div class="space-x-5 lg:space-x-[30px] flex">
-                        <img class="sm:w-16 h-16 lg:w-[84px] lg:h-[84px]" src="img/Group 1000002014.png" alt="">
+                        <img class="sm:w-16 h-16 lg:w-[84px] lg:h-[84px]" src="img/Group 1000002014.png"
+                            alt="Support Icon">
                         <div class="space-y-[11px]">
-                            <h2 class="font-medium sm:text-base lg:text-2xl leading-6">Further assistance contact our
-                                support team at</h2>
+                            <h2 class="font-medium sm:text-base lg:text-2xl leading-6">
+                                Further assistance? Contact our support team at
+                            </h2>
                             <button
-                                class="border rounded-full text-base px-2 py-1 lg:px-4 lg:py-2 text-[#195279] border-black">support@simprosys.com</button>
+                                class="border rounded-full text-base px-2 py-1 lg:px-4 lg:py-2 text-[#195279] border-black">
+                                support@simprosys.com
+                            </button>
                         </div>
                     </div>
                 </div>
+
+                <!-- Section 3: Decorative Image -->
                 <div class="hidden lg:block col-span-3">
-                    <div class="x-5 flex">
+                    <div class="flex">
                         <img class="sm:w-[200px] sm:h-[90px] lg:h-full lg:w-full" src="img/Group 1000001986 (1).png"
-                            alt="">
+                            alt="Decorative Image">
                     </div>
                 </div>
             </div>
         </div>
 
         <footer>
-            <div class="bg-[#195279] p-8 sm:px-[68px] xl:py-[50px] 2xl:py-[121px] ">
+            <div class="bg-[#195279] p-8 sm:px-[68px] xl:py-[50px] 2xl:py-[121px]">
                 <div
                     class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 mx-auto 2xl:w-[1640px] space-y-10 sm:space-y-0">
 
+                    <!-- Company Information Section -->
                     <div class="sm:pl-[20px] space-y-[18px]">
-                        <img src="img/logo.png" alt="">
+                        <img src="img/logo.png" alt="Simprosys Logo">
                         <div>
-                            <p class="text-base font-light leading-7 text-white">Simprosys Infomedia B-303,
-                                Shapath
-                                Hexa, Opp.
-                                Gujarat High
-                                Court, S.G.
-                                Highway,
-                                Ahmedabad
-                                , Gujarat - 380060 India</p>
+                            <p class="text-base font-light leading-7 text-white">
+                                Simprosys Infomedia B-303, Shapath Hexa, Opp. Gujarat High Court, S.G. Highway,
+                                Ahmedabad,
+                                Gujarat - 380060, India
+                            </p>
                         </div>
                         <div class="flex space-x-2">
-                            <img class="w-5" src="img/SVG.png" alt="">
+                            <img class="w-5" src="img/SVG.png" alt="Email Icon">
                             <p class="font-light text-white">support@simprosys.com</p>
                         </div>
                         <div class="flex space-x-3">
-                            <img src="img/Vector (1).png" alt="">
-                            <img src="img/Vector (2).png" alt="">
-                            <img src="img/Layer 2.png" alt="">
-                            <img src="img/Vector (3).png" alt="">
-
+                            <img src="img/Vector (1).png" alt="Social Media Icon">
+                            <img src="img/Vector (2).png" alt="Social Media Icon">
+                            <img src="img/Layer 2.png" alt="Social Media Icon">
+                            <img src="img/Vector (3).png" alt="Social Media Icon">
                         </div>
                     </div>
+
+                    <!-- Navigation Links Section -->
                     <div class="sm:pl-[20px] space-y-[18px] sm:w-[330px]">
-                        <h3 class="text-[#FFDF30] text-[28px] leading-[35px] font-medium">Who we are</h3>
-                        <img src="img/Horizontal Divider.png" alt="">
-                        <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a href="">Home</a>
+                        <h3 class="text-[#FFDF30] text-[28px] leading-[35px] font-medium">Who We Are</h3>
+                        <img src="img/Horizontal Divider.png" alt="Divider">
+                        <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a href="#">Home</a>
                         </p>
-                        <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a href="">About
+                        <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a href="#">About
                                 Us</a></p>
-                        <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a href="">Why Us</a>
+                        <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a href="#">Why Us</a>
                         </p>
-                        <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a href="">Blogs</a>
+                        <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a href="#">Blogs</a>
                         </p>
                         <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a
-                                href="">Partnership</a></p>
-                        <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a href="">Work at
+                                href="#">Partnership</a>
+                        </p>
+                        <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a href="#">Work at
                                 Simprosys</a></p>
-                        <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a href="">Contact
+                        <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a href="#">Contact
                                 Us</a></p>
                     </div>
+
+                    <!-- Solutions Section -->
                     <div class="sm:pl-[20px] space-y-[18px] sm:col-span-2 xl:col-span-1">
                         <h3 class="text-[#FFDF30] text-[28px] leading-[35px] font-medium">Our Solutions On</h3>
-                        <img src="img/Horizontal Divider (1).png" alt="">
-                        <div class="grid sm:grid-cols-2 space-y-5 ">
+                        <img src="img/Horizontal Divider (1).png" alt="Divider">
+                        <div class="grid sm:grid-cols-2 space-y-5 lg:space-y-0">
+
+                            <!-- Shopify Section -->
                             <div class="space-y-[18px]">
                                 <h2 class="font-medium text-[24px] leading-[27px] text-white">Shopify</h2>
-
                                 <div class="flex space-x-1 items-center">
-                                    <img src="img/✦.png" alt="">
+                                    <img src="img/✦.png" alt="Bullet Point Icon">
                                     <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a
-                                            href="">Shopping Feed
-                                            for
-                                            Google</a></p>
+                                            href="#">Shopping Feed for Google</a></p>
                                 </div>
                                 <div class="flex space-x-1 items-center">
-                                    <img src="img/✦.png" alt="">
+                                    <img src="img/✦.png" alt="Bullet Point Icon">
                                     <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a
-                                            href="">Bing -
-                                            Microsoft
-                                            Ads</a></p>
+                                            href="#">Bing -
+                                            Microsoft Ads</a></p>
                                 </div>
                                 <div class="flex space-x-1 items-center">
-                                    <img src="img/✦.png" alt="">
+                                    <img src="img/✦.png" alt="Bullet Point Icon">
                                     <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a
-                                            href="">Proviews -
-                                            Product
-                                            Reviews Q&A</a></p>
+                                            href="#">Proviews - Product Reviews Q&A</a></p>
                                 </div>
                                 <div class="flex space-x-1 items-center">
-                                    <img src="img/✦.png" alt="">
+                                    <img src="img/✦.png" alt="Bullet Point Icon">
                                     <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a
-                                            href="">Product
-                                            Question
-                                            and Answer</a></p>
+                                            href="#">Product Question and Answer</a></p>
                                 </div>
                                 <div class="flex space-x-1 items-center">
-                                    <img src="img/✦.png" alt="">
+                                    <img src="img/✦.png" alt="Bullet Point Icon">
                                     <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a
-                                            href="">Simprosys
-                                            Customer
-                                            Match Lists</a></p>
+                                            href="#">Simprosys Customer Match Lists</a></p>
                                 </div>
                                 <div class="flex space-x-1 items-center">
-                                    <img src="img/✦.png" alt="">
+                                    <img src="img/✦.png" alt="Bullet Point Icon">
                                     <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a
-                                            href="">Simprosys
-                                            Manufacturer Feed</a></p>
+                                            href="#">Simprosys Manufacturer Feed</a></p>
                                 </div>
                             </div>
 
+                            <!-- WooCommerce Section -->
                             <div class="space-y-[18px]">
                                 <h2 class="font-medium text-[24px] leading-[27px] text-white">WooCommerce</h2>
-
                                 <div class="flex space-x-1 items-center">
-                                    <img src="img/✦.png" altrelative group="">
+                                    <img src="img/✦.png" alt="Bullet Point Icon">
                                     <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a
-                                            href="">Shopping Feed
-                                            for
-                                            Google</a></p>
-
+                                            href="#">Shopping Feed for Google</a></p>
                                 </div>
                                 <h2 class="font-medium text-[24px] leading-[27px] text-white">Shopline</h2>
-
                                 <div class="flex space-x-1 items-center">
-                                    <img src="img/✦.png" alt="">
+                                    <img src="img/✦.png" alt="Bullet Point Icon">
                                     <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a
-                                            href="">Shopping Feed
-                                            for
-                                            Google</a></p>
-
+                                            href="#">Shopping Feed for Google</a></p>
                                 </div>
                                 <div class="flex space-x-1 items-center">
-                                    <img src="img/✦.png" alt="">
+                                    <img src="img/✦.png" alt="Bullet Point Icon">
                                     <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a
-                                            href="">Simprosys
-                                            Customer
-                                            Match Lists</a></p>
-
+                                            href="#">Simprosys Customer Match Lists</a></p>
                                 </div>
                                 <div class="flex space-x-1 items-center">
-                                    <img src="img/✦.png" alt="">
+                                    <img src="img/✦.png" alt="Bullet Point Icon">
                                     <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a
-                                            href="">ParcelDesk by
-                                            Simprosys</a></p>
-
+                                            href="#">ParcelDesk by Simprosys</a></p>
                                 </div>
                                 <h2 class="font-medium text-[24px] leading-[27px] text-white">Wix</h2>
-
                                 <div class="flex space-x-1 items-center">
-                                    <img src="img/✦.png" alt="">
+                                    <img src="img/✦.png" alt="Bullet Point Icon">
                                     <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a
-                                            href="">Google
-                                            Shopping by
-                                            Simprosys</a></p>
-
+                                            href="#">Google
+                                            Shopping by Simprosys</a></p>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Footer Bottom Section -->
             <div class="bg-[#103E5D] py-[25px]">
                 <div class="text-center sm:flex sm:justify-around">
-                    <p class="text-white font-light text-base">&copy; Simprosys Infomedia,All Rights Reserved</p>
+                    <p class="text-white font-light text-base">&copy; Simprosys Infomedia, All Rights Reserved</p>
                     <p class="text-white font-light text-base">Privacy | Cookie Policy</p>
                 </div>
             </div>
         </footer>
+
     </section>
     <!-- Footer Section End-->
 
