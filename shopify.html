@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/alpine.min.js" defer></script>
     <title>simprosys</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-
     <style>
         body {
             font-family: "Poppins", serif;
@@ -87,42 +88,103 @@
     </section>
     <!-- Image Section End -->
 
+
+
+
     <!-- Main Section Start -->
     <section class="mt-[20px] xl:mt-[70px]">
+        <!-- Mobile Menu Start -->
+        <div class=" p-1 w-full inset-y-0 left-0 flex items-center justify-between lg:hidden bg-white">
+            <div class="relative p-4">
+                <img src="img/shopify.png" alt="">
+            </div>
+            <div>
+                <button id="menu-button" type="button"
+                    class="inline-flex items-center justify-center p-2 text-gray-400 hover:bg-[#195178] hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                    aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="block h-6 w-6 font-bold" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                    <svg class="hidden h-6 w-6 font-bold" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+
+        <div id="mobile-menu" class="lg:hidden block">
+            <div class="space-y-1 px-2 pt-2 ">
+                <div class="flex p-[6px] rounded-xl hover:bg-[#E9F6FF] space-x-3 items-center">
+                    <img src="img/shopify1.png" alt="">
+                    <a href="" class="font-sm">Simprosys Google Shopping Feed
+                    </a>
+                </div>
+                <div class="flex p-[6px] rounded-xl hover:bg-[#E9F6FF] space-x-3 items-center">
+                    <img src="img/shopify2.png" alt="">
+                    <a href="" class="font-sm">Proviews Product Reviews Q&A</a>
+                </div>
+                <div class="flex p-[6px] rounded-xl hover:bg-[#E9F6FF] space-x-3 items-center">
+                    <img src="img/shopify3.png" alt="">
+                    <a class="font-sm ">Simprosys Manufacturer Feed</a>
+                </div>
+                <div class="flex p-[6px] rounded-xl hover:bg-[#E9F6FF] space-x-3 items-center">
+                    <img src="img/shopify4.png" alt="">
+                    <a href="" class="font-sm">FeedAPIs For Bing Shopping /MS
+                    </a>
+                </div>
+                <div class="flex p-[6px] rounded-xl hover:bg-[#E9F6FF] space-x-3 items-center">
+                    <img src="img/shopify5.png" alt="">
+                    <a href="" class="font-sm ">Simprosys Customer Match Lists
+                    </a>
+                </div>
+                <div class="flex p-[6px] rounded-xl hover:bg-[#E9F6FF] space-x-3 items-center">
+                    <img src="img/shopify6.png" alt="">
+                    <a href="" class="font-sm ">SMPS Product Question & Answer
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu End -->
+
         <div class="mx-[20px] md:mx-[26px] 2xl:mx-[97.5px] lg:mx-[50px] ">
             <div class="grid md:grid-cols-12">
                 <div
-                    class="hidden md:block width=[25%] xl:mt-[-70px] space-y-8 md:col-span-4 lg:col-span-3 md:border-r-2">
+                    class="hidden md:block width=[25%] xl:mt-[-70px] space-y-8 md:col-span-4 lg:col-span-3 md:border-r">
                     <p class="text-base texr-[#6D6F71] xl:mt-[70px]">Support by Platform</p>
                     <img src="img/shopify.png" alt="">
                     <div class="space-y-4 text-[#55575A]">
-                        <div class="flex p-[6px] rounded-xl hover:bg-[#E9F6FF] space-x-3">
+                        <div class="flex p-[6px] rounded-xl hover:bg-[#E9F6FF] space-x-3 items-center">
                             <img src="img/shopify1.png" alt="">
-                            <p class="font-medium text-[16px] xl:leading-7">Simprosys Google Shopping Feed
-                            </p>
+                            <a href="" class="font-medium text-[16px] xl:leading-7">Simprosys Google Shopping Feed
+                            </a>
                         </div>
-                        <div class="flex p-[6px] rounded-xl hover:bg-[#E9F6FF] space-x-3">
+                        <div class="flex p-[6px] rounded-xl hover:bg-[#E9F6FF] space-x-3 items-center">
                             <img src="img/shopify2.png" alt="">
-                            <p class="font-medium text-[16px] xl:leading-7">Proviews Product Reviews Q&A</p>
+                            <a href="" class="font-medium text-[16px] xl:leading-7">Proviews Product Reviews Q&A</a>
                         </div>
-                        <div class="flex p-[6px] rounded-xl hover:bg-[#E9F6FF] space-x-3">
+                        <div class="flex p-[6px] rounded-xl hover:bg-[#E9F6FF] space-x-3 items-center">
                             <img src="img/shopify3.png" alt="">
-                            <p class="font-medium text-[16px] xl:leading-7 ">Simprosys Manufacturer Feed</p>
+                            <a class="font-medium text-[16px] xl:leading-7 ">Simprosys Manufacturer Feed</a>
                         </div>
-                        <div class="flex p-[6px] rounded-xl hover:bg-[#E9F6FF] space-x-3">
+                        <div class="flex p-[6px] rounded-xl hover:bg-[#E9F6FF] space-x-3 items-center">
                             <img src="img/shopify4.png" alt="">
-                            <p class="font-medium text-[16px] xl:leading-7">FeedAPIs For Bing Shopping /MS
-                            </p>
+                            <a href="" class="font-medium text-[16px] xl:leading-7">FeedAPIs For Bing Shopping /MS
+                            </a>
                         </div>
-                        <div class="flex p-[6px] rounded-xl hover:bg-[#E9F6FF] space-x-3">
+                        <div class="flex p-[6px] rounded-xl hover:bg-[#E9F6FF] space-x-3 items-center">
                             <img src="img/shopify5.png" alt="">
-                            <p class="font-medium text-[16px] xl:leading-7 ">Simprosys Customer Match Lists
-                            </p>
+                            <a href="" class="font-medium text-[16px] xl:leading-7 ">Simprosys Customer Match Lists
+                            </a>
                         </div>
-                        <div class="flex p-[6px] rounded-xl hover:bg-[#E9F6FF] space-x-3">
+                        <div class="flex p-[6px] rounded-xl hover:bg-[#E9F6FF] space-x-3 items-center">
                             <img src="img/shopify6.png" alt="">
-                            <p class="font-medium text-[16px] xl:leading-7 ">SMPS Product Question & Answer
-                            </p>
+                            <a href="" class="font-medium text-[16px] xl:leading-7 ">SMPS Product Question & Answer
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -160,7 +222,7 @@
                         <div>
                             <div>
                                 <div class="flex px-2 py-4 xl:px-4 xl:py-8 border-t-2 justify-between">
-                                    <h2 class="text-xl xl:text-2xl font-medium">Pre-Installation - GSF</h2>
+                                    <h2 class="text-xl xl:text-2xl font-medium">Installation </h2>
                                     <button><img src="img/Arrow-down.png" alt=""></button>
                                 </div>
                                 <div class="px-2 py-4 xl:px-4 xl:pb-8">
@@ -238,36 +300,39 @@
 
     <!-- Footer Section Startr -->
     <section>
-        <div class="sm:flex bg-[#E9F6FF] sm:px-[24px] xl:px-auto   space-y-3 sm:space-y-0 ">
-            <div class="mx-[20px] md:mx-[26px] lg:mx-[50px] 2xl:mx-[97.5px] sm:flex py-2">
-                <div
-                    class="flex md:mx-[24px] my-5 sm:my-0 space-x-5  sm:space-x-3 lg:space-x-[21px] xl:pt-[30px] sm:mx-0 items-center">
-                    <img class="sm:w-16 h-16 lg:w-[84px] lg:h-[84px]" src="img/Group 1000002011 (1).png" alt="">
-                    <div class="space-y-[11px]">
-                        <h2 class="font-medium sm:text-base lg:text-[21px] leading-6">Can't find what you're looking
-                            for?</h2>
-                        <button class="border rounded-full px-2 py-1 lg:px-4 lg:py-2 text-[#195279] border-black">Raise
-                            a
-                            Ticket</button>
+        <div class="bg-[#CEEBFF]">
+            <div
+                class="space-y-5 py-5 lg:space-y-0 lg:py-0 lg:grid lg:grid-cols-12 mx-[26px] lg:gap-10 lg:mx-[50px] 2xl:mx-[97.5px] items-center">
+                <div class="lg:col-span-4 ">
+                    <div class="space-x-5 lg:space-x-[30px] flex">
+                        <img class="sm:w-16 h-16 lg:w-[84px] lg:h-[84px]" src="img/Group 1000002011 (1).png" alt="">
+                        <div class="space-y-[11px]">
+                            <h2 class="font-medium sm:text-base lg:text-2xl leading-6">Can't find what you're looking
+                                for?</h2>
+                            <button
+                                class="border rounded-full text-base px-2 py-1 lg:px-4 lg:py-2 text-[#195279] border-black">Raise
+                                a
+                                Ticket</button>
+                        </div>
                     </div>
                 </div>
-
-                <div
-                    class="flex space-x-5 sm:space-x-3 my-5 sm:my-0 lg:space-x-[21px] md:mx-[24px] sm:mx-auto items-center">
-                    <img class="sm:w-16 h-16  lg:w-[84px] lg:h-[84px]" src="img/Group 1000002014.png" alt="">
-                    <div class="space-y-[11px]">
-                        <h2 class="font-medium sm:text-base lg:text-[21px] leading-6">Further assistance contact our
-                            support team at
-                        </h2>
-                        <button
-                            class="border rounded-full px-2 py-1  lg:px-4 lg:py-2 text-[#195279] border-black">support@simprosys.com</button>
+                <div class="lg:col-start-5 lg:col-end-10">
+                    <div class="space-x-5 lg:space-x-[30px] flex">
+                        <img class="sm:w-16 h-16 lg:w-[84px] lg:h-[84px]" src="img/Group 1000002014.png" alt="">
+                        <div class="space-y-[11px]">
+                            <h2 class="font-medium sm:text-base lg:text-2xl leading-6">Further assistance contact our
+                                support team at</h2>
+                            <button
+                                class="border rounded-full text-base px-2 py-1 lg:px-4 lg:py-2 text-[#195279] border-black">support@simprosys.com</button>
+                        </div>
                     </div>
                 </div>
-
-                <div class="hidden md:flex space-x-[21px] pt-[30px] sm:pt-0 mx-auto items-center justify-center">
-                    <img class="sm:w-[200px] sm:h-[90px] lg:h-auto lg:w-full" src="img/Group 1000001986 (1).png" alt="">
+                <div class="hidden lg:block col-span-3">
+                    <div class="x-5 flex">
+                        <img class="sm:w-[200px] sm:h-[90px] lg:h-full lg:w-full" src="img/Group 1000001986 (1).png"
+                            alt="">
+                    </div>
                 </div>
-
             </div>
         </div>
 
@@ -410,6 +475,27 @@
         </footer>
     </section>
     <!-- Footer Section End-->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const button = document.getElementById('menu-button');
+            const menu = document.getElementById('mobile-menu');
+            const openIcon = button.querySelector('svg:nth-of-type(1)');
+            const closeIcon = button.querySelector('svg:nth-of-type(2)');
+
+            button.addEventListener('click', function () {
+                if (menu.classList.contains('hidden')) {
+                    menu.classList.remove('hidden');
+                    openIcon.classList.add('hidden');
+                    closeIcon.classList.remove('hidden');
+                } else {
+                    menu.classList.add('hidden');
+                    openIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

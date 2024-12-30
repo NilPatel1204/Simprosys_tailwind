@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="input.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -44,7 +46,6 @@
         </div>
     </section>
     <!-- Navbar section start-->
-
 
     <!-- Image Section Start -->
     <section class="bg-cover bg-center m-[30px]">
@@ -509,13 +510,13 @@
     <!-- Recent Videos Section Start -->
     <section class="mt-[64px]">
         <div class="mx-[26px] lg:mx-[50px] 2xl:mx-[97.5px]">
-            <div class="sm:flex sm:space-x-[22px] space-y-[24px]  sm:space-y-0 ">
-                <div class="sm:relative sm:pb-[20px]">
+            <div class="sm:grid grid-cols-12 sm:space-x-[22px] space-y-[24px]  sm:space-y-0 ">
+                <div class="col-span-3 sm:relative sm:pb-[20px]">
                     <div class="gap-4 space-y-3">
                         <h2 class="text-4xl sm:text-4xl xl:text-[48px] font-normal">Recent Videos</h2>
-                        <p class="text-base xl:text-lg">Check out our official <span
-                                class="text-[#a9b9c3] underline">YouTube
-                                channel</span> to
+                        <p class="text-base xl:text-lg">Check out our official <a href=""
+                                class="text-[#195279] underline">YouTube
+                                channel</a> to
                             help
                             you get the most
                             from our
@@ -528,24 +529,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-[22px]">
+                <div class="col-span-9 grid grid-cols-3  xl:grid-cols-3 gap-4 xl:gap-[22px]">
                     <div>
-                        <img class="" src="img/Mask group (1).png" alt="">
+                        <img class="w-full" src="img/Mask group (1).png" alt="">
                     </div>
                     <div>
-                        <img src="img/Mask group (2).png" alt="">
+                        <img class="w-full" src="img/Mask group (2).png" alt="">
                     </div>
                     <div>
-                        <img src="img/Mask group (3).png" alt="">
+                        <img class="w-full" src="img/Mask group (3).png" alt="">
                     </div>
                     <div>
-                        <img src="img/Mask group (4).png" alt="">
+                        <img class="w-full" src="img/Mask group (4).png" alt="">
                     </div>
                     <div>
-                        <img src="img/Mask group (7).png" alt="">
+                        <img class="w-full" src="img/Mask group (7).png" alt="">
                     </div>
                     <div>
-                        <img src="img/Mask group (6).png" alt="">
+                        <img class="w-full" src="img/Mask group (6).png" alt="">
                     </div>
                 </div>
             </div>
@@ -556,39 +557,41 @@
 
     <!-- Footer Section Start-->
     <section class="mt-[64px]">
-        <div class="sm:flex bg-[#E9F6FF] sm:px-[24px] xl:px-auto   space-y-3 sm:space-y-0 ">
-            <div class="mx-[26px] lg:mx-[50px] 2xl:mx-[97.5px] sm:flex py-2">
-                <div
-                    class="flex md:mx-[24px] my-5 sm:my-0 space-x-5  sm:space-x-3 lg:space-x-[21px] lg:pt-[30px] sm:mx-0 items-center">
-                    <img class="sm:w-16 h-16 lg:w-[84px] lg:h-[84px]" src="img/Group 1000002011 (1).png" alt="">
-                    <div class="space-y-[11px]">
-                        <h2 class="font-medium sm:text-base lg:text-[21px] leading-6">Can't find what you're looking
-                            for?</h2>
-                        <button class="border rounded-full px-2 py-1 lg:px-4 lg:py-2 text-[#195279] border-black">Raise
-                            a
-                            Ticket</button>
+        <div class="bg-[#CEEBFF]">
+            <div
+                class="space-y-5 py-5 lg:space-y-0 lg:py-0 lg:grid lg:grid-cols-12 mx-[26px] lg:gap-10 lg:mx-[50px] 2xl:mx-[97.5px] items-center">
+                <div class="lg:col-span-4 ">
+                    <div class="space-x-5 lg:space-x-[30px] flex">
+                        <img class="sm:w-16 h-16 lg:w-[84px] lg:h-[84px]" src="img/Group 1000002011 (1).png" alt="">
+                        <div class="space-y-[11px]">
+                            <h2 class="font-medium sm:text-base lg:text-2xl leading-6">Can't find what you're looking
+                                for?</h2>
+                            <button
+                                class="border rounded-full text-base px-2 py-1 lg:px-4 lg:py-2 text-[#195279] border-black">Raise
+                                a
+                                Ticket</button>
+                        </div>
                     </div>
                 </div>
-
-                <div
-                    class="flex space-x-5 sm:space-x-3 my-5 sm:my-0 lg:space-x-[21px] md:mx-[24px] sm:mx-auto items-center">
-                    <img class="sm:w-16 h-16  lg:w-[84px] lg:h-[84px]" src="img/Group 1000002014.png" alt="">
-                    <div class="space-y-[11px]">
-                        <h2 class="font-medium sm:text-base lg:text-[21px] leading-6">Further assistance contact our
-                            support team at
-                        </h2>
-                        <button
-                            class="border rounded-full px-2 py-1  lg:px-4 lg:py-2 text-[#195279] border-black">support@simprosys.com</button>
+                <div class="lg:col-start-5 lg:col-end-10">
+                    <div class="space-x-5 lg:space-x-[30px] flex">
+                        <img class="sm:w-16 h-16 lg:w-[84px] lg:h-[84px]" src="img/Group 1000002014.png" alt="">
+                        <div class="space-y-[11px]">
+                            <h2 class="font-medium sm:text-base lg:text-2xl leading-6">Further assistance contact our
+                                support team at</h2>
+                            <button
+                                class="border rounded-full text-base px-2 py-1 lg:px-4 lg:py-2 text-[#195279] border-black">support@simprosys.com</button>
+                        </div>
                     </div>
                 </div>
-
-                <div class="hidden md:flex space-x-[21px] pt-[30px] sm:pt-0 mx-auto items-center justify-center">
-                    <img class="sm:w-[200px] sm:h-[90px] lg:h-auto lg:w-full" src="img/Group 1000001986 (1).png" alt="">
+                <div class="hidden lg:block col-span-3">
+                    <div class="x-5 flex">
+                        <img class="sm:w-[200px] sm:h-[90px] lg:h-full lg:w-full" src="img/Group 1000001986 (1).png"
+                            alt="">
+                    </div>
                 </div>
-
             </div>
         </div>
-
         <footer>
             <div class="bg-[#195279] p-8 sm:px-[68px] xl:py-[50px] 2xl:py-[121px] ">
                 <div
