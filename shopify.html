@@ -8,80 +8,72 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script
         src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/alpine.min.js" defer></script>
     <title>simprosys</title>
-    <style>
-        body {
-            font-family: "Poppins", serif;
-            ;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Navbar section start -->
-    <section class="bg-[#195279] text-white overflow-hidden">
+    <nav class="bg-[#195279] text-white overflow-hidden">
         <div class="lg:bg-[#195279] px-1 ">
             <div class="flex justify-between  text-white items-center py-3 font-light  gap-[1.6rem] lg:px-3">
-                <img class="h-[2.5rem] sm:h-auto ml-2" src="img/logo.png" alt="">
+                <a href="/#index"><img class="h-[2.5rem] sm:h-auto ml-2" src="img/logo.png" alt=""></a>
                 <ul class=" flex sm:gap-4 justify-center items-center">
-                    <li
+                    <a href=""
                         class="font-normal mx-2 text-lg sm:bg-[#D6E9F8] text-white sm:text-[#195279] sm:px-4 sm:py-[10px] rounded-full">
-                        <a href="">
+                        <li>
                             <p class="text-[13px] sm:text-[17px]">Support Home</p>
-                        </a>
-                    </li>
-                    <li class="font-medium text-lg">
-                        <p class="text-[13px] sm:text-[17px]">Simprosys Home</p>
-                    </li>
+                        </li>
+                    </a>
+                    <a href="" class="font-medium text-lg mx-2 sm:px-4 sm:py-[10px] rounded-full">
+                        <li>
+                            <p class="text-[13px] sm:text-[17px]">Simprosys Home</p>
+                        </li>
+                    </a>
                 </ul>
             </div>
         </div>
-    </section>
+    </nav>
     <!-- Navbar section start-->
 
 
     <!-- Image Section Start -->
     <section class="bg-cover bg-center">
-        <div class="flex flex-wrap content-center text-center justify-center relative bg-cover bg-center w-full rounded-b-[48px] h-[219px]"
-            style=" background-image: url(img/FrameImage.png); ">
+        <div
+            class="flex flex-wrap content-center text-center justify-center relative bg-cover bg-center w-full rounded-b-[48px] h-[219px] bg-[url('/img/FrameImage.png')] ">
             <div class="space-y-6">
                 <div class="flex items-center justify-center">
-                    <div class="relative mx-auto w-full px-[20px] ">
-                        <button class="w-full"><input type="text" placeholder="Search Simprosys support"
-                                class="w-full font-normal text-base text-[#25282B] px-4 py-2 border border-gray-300 rounded-full shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none  sm:text-base" /></button>
+                    <div class="relative w-full px-[20px] sm:px-[100px]">
+                        <a class="w-full"><input type="text" placeholder="Search Simprosys support"
+                                class="w-full font-normal text-base text-[#25282B] px-4 py-2 border border-gray-300 rounded-full shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none  sm:text-base" /></a>
                     </div>
                 </div>
                 <div
                     class="hidden  space-y-2 px-11 sm:space-y-0 sm:grid grid-cols-2 md:grid-cols-4 items-center justify-center gap-4">
-                    <div class="px-2 py-1 md:px-3 md:py-2 bg-[#133953] bg-opacity-50 text-white rounded-full">
-                        <a href="">
-                            <p class="font-normal text-sm md:text-base">Shopify Feed</p>
-                        </a>
-                    </div>
-                    <div class="px-2 py-1 md:px-3 md:py-2 bg-[#133953] bg-opacity-50 text-white rounded-full">
-                        <a href="">
-                            <p class="font-normal text-sm md:text-base">Good Shoping Feed</p>
-                        </a>
-                    </div>
-                    <div class="px-2 py-1 md:px-3 md:py-2 bg-[#133953] bg-opacity-50 text-white rounded-full">
-                        <a href="">
-                            <p class="font-normal text-sm md:text-base">Manufactural Feed</p>
-                        </a>
-                    </div>
-                    <div class="px-2 py-1 md:px-3 md:py-2 bg-[#133953] bg-opacity-50 text-white rounded-full">
-                        <a href="">
-                            <p class="font-normal text-sm md:text-base">Shoping Feed</p>
-                        </a>
-                    </div>
+                    <a href=""
+                        class="px-2 py-1 md:px-3 md:py-2 bg-[#133953] bg-opacity-50 text-white rounded-full font-normal text-sm md:text-base">Shopify
+                        Feed
+                    </a>
+                    <a href=""
+                        class="px-2 py-1 md:px-3 md:py-2 bg-[#133953] bg-opacity-50 text-white rounded-full font-normal text-sm md:text-base">Good
+                        Shoping Feed
+                    </a>
+                    <a href=""
+                        class="px-2 py-1 md:px-3 md:py-2 bg-[#133953] bg-opacity-50 text-white rounded-full font-normal text-sm md:text-base">Manufactural
+                        Feed
+                    </a>
+                    <a href=""
+                        class="px-2 py-1 md:px-3 md:py-2 bg-[#133953] bg-opacity-50 text-white rounded-full font-normal text-sm md:text-base">Shoping
+                        Feed
+                    </a>
                 </div>
             </div>
         </div>
@@ -190,7 +182,7 @@
                 </div>
 
                 <div class=" lg:col-start-5 md:px-2 lg:px-0 md:col-span-8 lg:col-span-7 ">
-                    <div class="mt-[20px] md:mt-[0px] md:pt-[0px]  space-y-8 xl:space-y-16">
+                    <div class="mt-[20px] md:mt-[0px] md:pt-[0px]  space-y-8 xl:space-y-16 mb-[50px] lg:mb-[92px]">
                         <div>
                             <div class="space-y-8">
                                 <div class="flex space-x-[10px]">
@@ -228,14 +220,23 @@
                                 <div class="px-2 py-4 xl:px-4 xl:pb-8">
                                     <ul
                                         class="font-medium text-sm space-y-3 xl:text-[16px] xl:leading-[42px] text-[#55575A] list-disc list-inside">
-                                        <li>Why Should I Try Simprosys Google Shopping Feed?</li>
-                                        <li>Pricing for Simprosys Google Shopping Feed</li>
-                                        <li>Privacy Policy – Simprosys Google Shopping Feed</li>
-                                        <li>Programs in Google Merchant Center</li>
-                                        <li>List your Products for FREE on Google Shopping Results</li>
-                                        <li>Simprosys Google Shopping Feed App Setup Guidelines</li>
-                                        <li>Best Practices for Feed Optimization</li>
-                                        <li>Refund Policy – Simprosys Google Shopping Feed</li>
+                                        <li><a class="hover:underline hover:text-[#25282B]" href="">Why Should I Try
+                                                Simprosys Google
+                                                Shopping Feed?</a></li>
+                                        <li><a class="hover:underline hover:text-[#25282B]" href="">Pricing for
+                                                Simprosys Google Shopping Feed</a></li>
+                                        <li><a class="hover:underline hover:text-[#25282B]" href="">Privacy Policy –
+                                                Simprosys Google Shopping Feed</a></li>
+                                        <li><a class="hover:underline hover:text-[#25282B]" href="">Programs in
+                                                Google Merchant Center</a></li>
+                                        <li><a class="hover:underline hover:text-[#25282B]" href="">List your
+                                                Products for FREE on Google Shopping Results</a></li>
+                                        <li><a class="hover:underline hover:text-[#25282B]" href="">Simprosys Google
+                                                Shopping Feed App Setup Guidelines</a></li>
+                                        <li><a class="hover:underline hover:text-[#25282B]" href="">Best Practices
+                                                for Feed Optimization</a></li>
+                                        <li><a class="hover:underline hover:text-[#25282B]" href="">Refund Policy –
+                                                Simprosys Google Shopping Feed</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -284,7 +285,7 @@
                                 </div>
                             </div>
                             <div>
-                                <div class="flex px-2 py-4 xl:px-4 xl:py-8 border-t-2 justify-between">
+                                <div class="flex px-2 py-4 xl:px-4 xl:py-8 border-y-2 justify-between">
                                     <h2 class="text-xl xl:text-2xl font-medium">Pinterest Shopping - GSF</h2>
                                     <button><img src="img/Arrow-down.png" alt=""></button>
                                 </div>
@@ -368,13 +369,20 @@
                     <div class="sm:pl-[20px] space-y-[18px] sm:w-[330px]">
                         <h3 class="text-[#FFDF30] text-[28px] leading-[35px] font-medium">Who we are</h3>
                         <img src="img/Horizontal Divider.png" alt="">
-                        <p class="text-white font-light leading-6 text-base"><a href="">Home</a></p>
-                        <p class="text-white font-light leading-6 text-base"><a href="">About Us</a></p>
-                        <p class="text-white font-light leading-6 text-base"><a href="">Why Us</a></p>
-                        <p class="text-white font-light leading-6 text-base"><a href="">Blogs</a></p>
-                        <p class="text-white font-light leading-6 text-base"><a href="">Partnership</a></p>
-                        <p class="text-white font-light leading-6 text-base"><a href="">Work at Simprosys</a></p>
-                        <p class="text-white font-light leading-6 text-base"><a href="">Contact Us</a></p>
+                        <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a href="">Home</a>
+                        </p>
+                        <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a href="">About
+                                Us</a></p>
+                        <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a href="">Why Us</a>
+                        </p>
+                        <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a href="">Blogs</a>
+                        </p>
+                        <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a
+                                href="">Partnership</a></p>
+                        <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a href="">Work at
+                                Simprosys</a></p>
+                        <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a href="">Contact
+                                Us</a></p>
                     </div>
                     <div class="sm:pl-[20px] space-y-[18px] sm:col-span-2 xl:col-span-1">
                         <h3 class="text-[#FFDF30] text-[28px] leading-[35px] font-medium">Our Solutions On</h3>
@@ -385,37 +393,43 @@
 
                                 <div class="flex space-x-1 items-center">
                                     <img src="img/✦.png" alt="">
-                                    <p class="text-white font-light leading-6 text-base"><a href="">Shopping Feed
+                                    <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a
+                                            href="">Shopping Feed
                                             for
                                             Google</a></p>
                                 </div>
                                 <div class="flex space-x-1 items-center">
                                     <img src="img/✦.png" alt="">
-                                    <p class="text-white font-light leading-6 text-base"><a href="">Bing -
+                                    <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a
+                                            href="">Bing -
                                             Microsoft
                                             Ads</a></p>
                                 </div>
                                 <div class="flex space-x-1 items-center">
                                     <img src="img/✦.png" alt="">
-                                    <p class="text-white font-light leading-6 text-base"><a href="">Proviews -
+                                    <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a
+                                            href="">Proviews -
                                             Product
                                             Reviews Q&A</a></p>
                                 </div>
                                 <div class="flex space-x-1 items-center">
                                     <img src="img/✦.png" alt="">
-                                    <p class="text-white font-light leading-6 text-base"><a href="">Product
+                                    <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a
+                                            href="">Product
                                             Question
                                             and Answer</a></p>
                                 </div>
                                 <div class="flex space-x-1 items-center">
                                     <img src="img/✦.png" alt="">
-                                    <p class="text-white font-light leading-6 text-base"><a href="">Simprosys
+                                    <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a
+                                            href="">Simprosys
                                             Customer
                                             Match Lists</a></p>
                                 </div>
                                 <div class="flex space-x-1 items-center">
                                     <img src="img/✦.png" alt="">
-                                    <p class="text-white font-light leading-6 text-base"><a href="">Simprosys
+                                    <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a
+                                            href="">Simprosys
                                             Manufacturer Feed</a></p>
                                 </div>
                             </div>
@@ -425,7 +439,8 @@
 
                                 <div class="flex space-x-1 items-center">
                                     <img src="img/✦.png" altrelative group="">
-                                    <p class="text-white font-light leading-6 text-base"><a href="">Shopping Feed
+                                    <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a
+                                            href="">Shopping Feed
                                             for
                                             Google</a></p>
 
@@ -434,21 +449,24 @@
 
                                 <div class="flex space-x-1 items-center">
                                     <img src="img/✦.png" alt="">
-                                    <p class="text-white font-light leading-6 text-base"><a href="">Shopping Feed
+                                    <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a
+                                            href="">Shopping Feed
                                             for
                                             Google</a></p>
 
                                 </div>
                                 <div class="flex space-x-1 items-center">
                                     <img src="img/✦.png" alt="">
-                                    <p class="text-white font-light leading-6 text-base"><a href="">Simprosys
+                                    <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a
+                                            href="">Simprosys
                                             Customer
                                             Match Lists</a></p>
 
                                 </div>
                                 <div class="flex space-x-1 items-center">
                                     <img src="img/✦.png" alt="">
-                                    <p class="text-white font-light leading-6 text-base"><a href="">ParcelDesk by
+                                    <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a
+                                            href="">ParcelDesk by
                                             Simprosys</a></p>
 
                                 </div>
@@ -456,7 +474,8 @@
 
                                 <div class="flex space-x-1 items-center">
                                     <img src="img/✦.png" alt="">
-                                    <p class="text-white font-light leading-6 text-base"><a href="">Google
+                                    <p class="text-white font-light leading-6 text-base hover:text-[#FFDF30]"><a
+                                            href="">Google
                                             Shopping by
                                             Simprosys</a></p>
 
