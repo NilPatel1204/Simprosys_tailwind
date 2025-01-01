@@ -39,6 +39,21 @@ document.querySelectorAll(".platform-btn").forEach((button) => {
   });
 });
 
+// For Dropdown
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById("toggleButton");
+    const toggleSection = document.getElementById("toggleSection");
+    const arrowIcon = document.getElementById("arrowIcon");
+
+    toggleButton.addEventListener("click", function () {
+        // Toggle the hidden class to show or hide the section
+        toggleSection.classList.toggle("hidden");
+
+        // Toggle the rotate class to rotate the arrow icon
+        arrowIcon.classList.toggle("rotate");
+    });
+});
+
 // For Navbar
 
 // window.onscroll = function () {
